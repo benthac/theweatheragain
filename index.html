@@ -10,13 +10,19 @@
 <body>
     <h1><b>Weather Dashboard</b></h1>
 
-    <form>
-        <label for="city"><b>What city are you lookin for?</b></label><br>
-  <input type="text" id="city" name="city"><br>
+    <div>
+    <form id="city-form">
+        <label class="form-label" for="city"><b>What city are you lookin for?</b></label><br>
+        <input type="text" autofocus="true" id="city" name="city" class="form-input"><br>
+        <button type="submit" class="btn">Search</button>
     </form>
+    </div>
 
     <aside>
-        <div></div>
+        <div class="weather-display">
+            <h2 class="card">Current weather in: <span id="city-search-name"></span></h2>
+            <div id="weather-container" class="list-group"></div>
+        </div>
     </aside>
     <script src="script.js"></script>
 </body>
